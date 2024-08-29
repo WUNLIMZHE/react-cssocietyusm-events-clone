@@ -316,3 +316,12 @@ html {
 .prose :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-weight: 650; /* Adjust to desired weight */
 }
+
+@media (max-width: 400px) {
+  .filter-slidebar {
+    padding-top: 0;
+  }
+  .header{
+    align-items: center;
+  }
+}
