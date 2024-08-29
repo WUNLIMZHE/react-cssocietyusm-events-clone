@@ -35,7 +35,7 @@ npm install
 
 2. Run the server:<br/>
 ```
-node run dev
+npm run dev
 ```
 
 4. Go to http://localhost:5173.
