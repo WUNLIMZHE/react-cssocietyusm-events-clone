@@ -6,10 +6,10 @@ This project is a React-based clone of the CSS Society USM event page, designed 
 
 ### Modifications
 -------------------------------------------------------
-- **Filter Button Added on Main Page:** A filter button was introduced to allow users to quickly search for events based on specific academic years.
+1. **Filter Button Added on Main Page:** A filter button was introduced to allow users to quickly search for events based on specific academic years.
   - **Reason:** This enhancement improves user experience by enabling immediate access to events filtered by academic year.
 
-- **"Back to All Events" Button Added on Event Details Page:** A new button was added to navigate back to the main event list from the event details page.
+2. **"Back to All Events" Button Added on Event Details Page:** A new button was added to navigate back to the main event list from the event details page.
   - **Reason:** This addition provides users with a convenient way to return to the event overview after viewing details, enhancing navigation efficiency.
 
 Running the program
