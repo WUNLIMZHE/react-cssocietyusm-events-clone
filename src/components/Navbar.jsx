@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 function Navbar(){
   const [showNavbar, setShowNavbar] = useState(true);
@@ -72,7 +73,7 @@ function Navbar(){
           <a href="https://cssocietyusm.com/" className="text-xl py-2 h-fit">
             <div className="ml-6 flex items-center justify-center gap-4 md:ml-2">
               <img
-                src="./public/logo.svg"
+                src="/logo.svg"
                 type="image/svg+xml"
                 title="CS Society Logo"
                 height="64px"
@@ -83,7 +84,7 @@ function Navbar(){
                 <div className="leading-none">Science Society</div>
               </div>
             </div>
-          </a>
+          </ a>
         </div>
         <div className="navbar-end">
           {/* Conditional rendering based on screen size */}
@@ -119,7 +120,7 @@ function Navbar(){
                   <a href="https://cssocietyusm.com/about/" className="text-lg pr-6">About</a>
                 </li>
                 <li>
-                  <a href="/events" className="text-lg">Events</a>
+                  <Link to="/" className="text-lg">Events</Link>
                 </li>
               </ul>
             </div>

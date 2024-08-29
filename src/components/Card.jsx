@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 function Card(props){
   const [isMouseOverImg, setIsMouseOverImg] = useState(false);
@@ -31,16 +32,15 @@ function Card(props){
         style={{ objectPosition: "50% 45%" }} // Corrected style
       />
       <div className="absolute left-1/2 -translate-x-1/2 top-24">
-        <a href="/events/2023-2024/lon-2024">
-          <button className="btn btn-effect bg-theme-700 text-white gap-2 max-w-44 px-8 rounded-full text-lg group-hover:block border-0 transition leading-none hover:bg-theme-800 hover:scale-110
+        <button className="btn btn-effect bg-theme-700 text-white gap-2 max-w-44 px-8 rounded-full text-lg group-hover:block border-0 transition leading-none hover:bg-theme-800 hover:scale-110
           " style={{color: isMouseOverImg ? "white" : "transparent", border: "none", fontWeight: "bold", fontSize: "1.125rem", backgroundColor: isMouseOverImg ? (isMouseOverBtn ? "#0c3137" : "#103f45") : "transparent", borderRadius: "9999px", paddingLeft: "32px", paddingRight: "32px", 
             transform: isMouseOverBtn ? "scale(1.1)" : "scale(1)",
           }}
           onMouseEnter={handleMouseOverBtn}
-          onMouseLeave={handleMouseLeaveBtn}>
+          onMouseLeave={handleMouseLeaveBtn}
+          onClick={() => props.onClick(props.id)}>
             See more
           </button>
-        </a>
       </div>
       <div className="card-body flex flex-row gap-4 px-6">
         <div className="flex text-center items-center text-2xl font-bold pr-4 border-r-2 border-gray-300">
