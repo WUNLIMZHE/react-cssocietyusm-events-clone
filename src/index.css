@@ -308,3 +308,11 @@ html {
   transition: transform 0.3s ease, background-color 0.3s ease;
   transform: scale(1.1);
 }
+
+.event-details{
+  margin-bottom: 1rem; 
+}
+
+.prose :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  font-weight: 650; /* Adjust to desired weight */
+}
