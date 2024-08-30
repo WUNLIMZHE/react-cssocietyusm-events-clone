@@ -55,22 +55,19 @@ function Navbar(){
     setShowDropdown(!showDropdown);
   };
 
-  const [isAboutOptionClicked, setIsAboutOptionCLicked] = useState(false);
-  const [isEventOptionClicked, setIsEventOptionCLicked] = useState(false);
+  const [isAboutOptionClicked, setIsAboutOptionClicked] = useState(false);
+  const [isEventOptionClicked, setIsEventOptionClicked] = useState(false);
 
-  function handleAboutClickOption(){
-    setIsAboutOptionCLicked(true);
+  function handleAboutClickOption() {
+    console.log("About clicked");
+    setIsAboutOptionClicked(true);
   }
-
-  function handleEventClickOption(){
-    setIsEventOptionCLicked(true);
-  }
-
-  useEffect(() => {
-    setShowDropdown(false);
-    setIsAboutOptionCLicked(false);
-  }, [isAboutOptionClicked]);
   
+  function handleEventClickOption() {
+    console.log("Event clicked");
+    setIsEventOptionClicked(true);
+  }
+
   return (
     <div>
       <div id="navbar" className="navbar px-6 md:px-12 fixed z-30 bg-theme-800 text-white transition-all min-h-[6rem]" style={{ top: showNavbar ? '0px' : '-128px' }}>
@@ -108,14 +105,14 @@ function Navbar(){
                   tabIndex="0"
                   className="pop-menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-theme-700 flex-block"
                 >
-                  <div className="rounded-box" style={{backgroundColor: isAboutOptionClicked ? "#103f45" : "rgb(22 101 106)"}}>
+                  <div className="rounded-box" style={{backgroundColor: isAboutOptionClicked ? "#333232" : "rgb(22 101 106)"}}>
                     <a href="https://cssocietyusm.com/about/" className="text-lg" onClick={handleAboutClickOption}>
                       <button className="btn-effect pop-option block">
                         About
                       </button>
                     </a>
                   </div>
-                  <div className="rounded-box" style={{backgroundColor: isEventOptionClicked ? "#103f45" : "rgb(22 101 106)"}}>
+                  <div className="rounded-box" style={{backgroundColor: isEventOptionClicked ? "#333232" : "rgb(22 101 106)"}}>
                     <a href="/" className="text-lg" onClick={handleEventClickOption}>
                       <button className="btn-effect pop-option block">
                         Event
@@ -133,7 +130,7 @@ function Navbar(){
                   <a href="https://cssocietyusm.com/about/" className="text-lg pr-6">About</a>
                 </li>
                 <li>
-                  <Link to="/" className="text-lg">Events</Link>
+                  <a href="/" className="text-lg">Events</a>
                 </li>
               </ul>
             </div>
