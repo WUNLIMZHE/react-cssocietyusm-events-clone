@@ -61,13 +61,15 @@ function Navbar(){
   const [isEventOptionClicked, setIsEventOptionClicked] = useState(false);
 
   function handleAboutClickOption() {
+    console.log("About button got clicked!");
     setIsAboutOptionClicked(true);
-    setShowDropdown(false);
+    // setShowDropdown(false);
   }
   
   function handleEventClickOption() {
+    console.log("Event button got clicked!");
     setIsEventOptionClicked(true);
-    setShowDropdown(false);
+    // setShowDropdown(false);
   }
 
   return (
@@ -107,14 +109,18 @@ function Navbar(){
                   tabIndex="0"
                   className="pop-menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-theme-700 flex-block"
                 >
-                  <div className="rounded-box" style={{backgroundColor: isAboutOptionClicked ? "#333232" : "rgb(22 101 106)"}}>
+                  <div className={`rounded-box ${
+                        isAboutOptionClicked ? "bg-theme-900" : "bg-theme-700"
+                      }`}>
                     <a href="https://cssocietyusm.com/about/" className="text-lg" onClick={handleAboutClickOption}>
                       <button className="btn-effect pop-option block">
                         About
                       </button>
                     </a>
                   </div>
-                  <div className="rounded-box" style={{backgroundColor: isEventOptionClicked ? "#333232" : "rgb(22 101 106)"}}>
+                  <div className={`rounded-box ${
+                        isEventOptionClicked ? "bg-theme-900" : "bg-theme-700"
+                      }`}>
                     <a href="/" className="text-lg" onClick={handleEventClickOption}>
                       <button className="btn-effect pop-option block">
                         Event

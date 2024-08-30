@@ -11,6 +11,7 @@ export default {
         'base-200': '#dedede',
         'theme-700': 'rgb(22 101 106)',
         'theme-800': '#103f45', 
+        'theme-900': '#333232',
       },
       fontWeight: {
         'medium': 490,
