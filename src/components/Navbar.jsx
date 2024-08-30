@@ -53,6 +53,8 @@ function Navbar(){
   // Toggle dropdown visibility
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
+    setIsAboutOptionClicked(false);
+    setIsEventOptionClicked(false);
   };
 
   const [isAboutOptionClicked, setIsAboutOptionClicked] = useState(false);
@@ -60,13 +62,11 @@ function Navbar(){
 
   function handleAboutClickOption() {
     setIsAboutOptionClicked(true);
-    setIsEventOptionClicked(false);
     setShowDropdown(false);
   }
   
   function handleEventClickOption() {
     setIsEventOptionClicked(true);
-    setIsAboutOptionClicked(false);
     setShowDropdown(false);
   }
 
