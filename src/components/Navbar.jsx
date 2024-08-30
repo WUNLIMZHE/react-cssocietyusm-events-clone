@@ -55,22 +55,19 @@ function Navbar(){
     setShowDropdown(!showDropdown);
   };
 
-  const [isAboutOptionClicked, setIsAboutOptionCLicked] = useState(false);
-  const [isEventOptionClicked, setIsEventOptionCLicked] = useState(false);
+  const [isAboutOptionClicked, setIsAboutOptionClicked] = useState(false);
+  const [isEventOptionClicked, setIsEventOptionClicked] = useState(false);
 
-  function handleAboutClickOption(){
-    setIsAboutOptionCLicked(true);
+  function handleAboutClickOption() {
+    console.log("About clicked");
+    setIsAboutOptionClicked(true);
   }
-
-  function handleEventClickOption(){
-    setIsEventOptionCLicked(true);
-  }
-
-  useEffect(() => {
-    setShowDropdown(false);
-    setIsAboutOptionCLicked(false);
-  }, [isAboutOptionClicked]);
   
+  function handleEventClickOption() {
+    console.log("Event clicked");
+    setIsEventOptionClicked(true);
+  }
+
   return (
     <div>
       <div id="navbar" className="navbar px-6 md:px-12 fixed z-30 bg-theme-800 text-white transition-all min-h-[6rem]" style={{ top: showNavbar ? '0px' : '-128px' }}>
@@ -133,7 +130,7 @@ function Navbar(){
                   <a href="https://cssocietyusm.com/about/" className="text-lg pr-6">About</a>
                 </li>
                 <li>
-                  <Link to="/" className="text-lg">Events</Link>
+                  <a href="/" className="text-lg">Events</a>
                 </li>
               </ul>
             </div>
