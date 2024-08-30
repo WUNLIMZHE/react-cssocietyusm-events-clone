@@ -96,19 +96,6 @@ html {
   font-weight: 600;
 }
 
-/* .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
-} */
-
-/* .bg-theme-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 106 / var(--tw-bg-opacity));
-} */
-
 .card-body {
   display: flex;
   flex: 1 1 auto;
@@ -138,12 +125,6 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-timing-function: cubic-bezier(0,0,.2,1);
-  transition-duration: .2s; */
   height: 1.25rem;
   font-size: .875rem;
   line-height: 1.25rem;
@@ -253,15 +234,7 @@ html {
   outline-color: currentColor;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .btn {
-      animation: button-pop var(--animation-btn, .25s) ease-out;
-  }
-}
-
 .dropdown:is(:not(details)) .dropdown-content {
-  /* visibility: hidden;
-  opacity: 0; */
   transform-origin: top;
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -314,7 +287,7 @@ html {
 }
 
 .prose :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  font-weight: 650; /* Adjust to desired weight */
+  font-weight: 650; 
 }
 
 @media (max-width: 400px) {

@@ -99,17 +99,25 @@ function Navbar(){
               </label>
               {/* Conditional rendering of dropdown menu */}
               {showDropdown && (
-                <ul
+                <div
                   tabIndex="0"
-                  className="pop-menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-theme-700"
+                  className="pop-menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-theme-700 flex-block"
                 >
-                  <li className="btn-effect pop-option" onClick={handleAboutClickOption} style={{backgroundColor: isAboutOptionClicked ? "#103f45" : "rgb(22 101 106)"}}>
-                    <a href="https://cssocietyusm.com/about/" className="text-lg">About</a>
-                  </li>
-                  <li className="btn-effect pop-option" onClick={handleEventClickOption} style={{backgroundColor: isEventOptionClicked ? "#103f45" : "rgb(22 101 106)"}}>
-                    <a href="/events" className="text-lg">Events</a>
-                  </li>
-                </ul>
+                  <div className="rounded-box" style={{backgroundColor: isAboutOptionClicked ? "#103f45" : "rgb(22 101 106)"}}>
+                    <a href="https://cssocietyusm.com/about/" className="text-lg" onClick={handleAboutClickOption}>
+                      <button className="btn-effect pop-option block">
+                        About
+                      </button>
+                    </a>
+                  </div>
+                  <div className="rounded-box" style={{backgroundColor: isEventOptionClicked ? "#103f45" : "rgb(22 101 106)"}}>
+                    <a href="/" className="text-lg" onClick={handleEventClickOption}>
+                      <button className="btn-effect pop-option block">
+                        Event
+                      </button>
+                    </a>
+                  </div>
+                </div>
               )}
             </div>
           </div>
