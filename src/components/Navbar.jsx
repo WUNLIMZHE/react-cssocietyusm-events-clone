@@ -53,8 +53,6 @@ function Navbar(){
   // Toggle dropdown visibility
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
-    setIsAboutOptionClicked(false);
-    setIsEventOptionClicked(false);
   };
 
   return (
@@ -94,7 +92,7 @@ function Navbar(){
                   tabIndex="0"
                   className="pop-menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-theme-700 flex-block"
                 >
-                  <div className={`rounded-box active:bg-theme-900}`} onClick={toggleDropdown}>
+                  <div className={`rounded-box active:bg-theme-900}`}>
                     <a href="https://cssocietyusm.com/about/" className="text-lg" >
                       <button className="btn-effect pop-option block">
                         About
