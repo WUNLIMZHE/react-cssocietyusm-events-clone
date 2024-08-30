@@ -59,14 +59,14 @@ function Navbar(){
   const [isEventOptionClicked, setIsEventOptionClicked] = useState(false);
 
   function handleAboutClickOption() {
-    console.log("About clicked");
     setIsAboutOptionClicked(true);
+    setIsEventOptionClicked(false);
     setShowDropdown(false);
   }
   
   function handleEventClickOption() {
-    console.log("Event clicked");
     setIsEventOptionClicked(true);
+    setIsAboutOptionClicked(false);
     setShowDropdown(false);
   }
 
