@@ -93,7 +93,7 @@ function Navbar(){
                   className="pop-menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-theme-700 flex-block"
                 >
                   <div className={`rounded-box active:bg-theme-900}`}>
-                    <a href="https://cssocietyusm.com/about/" className="text-lg" >
+                    <a href="https://cssocietyusm.com/about/" className="text-lg" onClick={toggleDropdown}>
                       <button className="btn-effect pop-option block">
                         About
                       </button>
