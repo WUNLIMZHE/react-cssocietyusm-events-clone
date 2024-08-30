@@ -67,6 +67,7 @@ function Navbar(){
   }
 
   useEffect(() => {
+    setShowDropdown(false);
     setIsAboutOptionCLicked(false);
   }, [isAboutOptionClicked]);
   
