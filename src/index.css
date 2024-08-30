@@ -264,17 +264,12 @@ html {
   border-radius: var(--rounded-box, 1rem);
 }
 
-.pop-option{
+.pop-option {
   border-radius: var(--rounded-btn, .5rem);
   padding: .5rem 1rem;
   text-align: start;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-timing-function: cubic-bezier(0,0,.2,1);
-  transition-duration: .2s;
-  text-wrap: balance;
+  transition: background-color 0.2s ease-in-out; /* Adjusted transition for background-color */
+  cursor: pointer; /* Ensures that the cursor changes to a pointer on hover */
 }
 
 .btn-effect:active{
