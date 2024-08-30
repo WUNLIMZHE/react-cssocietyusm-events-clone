@@ -63,13 +63,13 @@ function Navbar(){
   function handleAboutClickOption() {
     console.log("About button got clicked!");
     setIsAboutOptionClicked(true);
-    // setShowDropdown(false);
+    toggleDropdown;
   }
   
   function handleEventClickOption() {
     console.log("Event button got clicked!");
     setIsEventOptionClicked(true);
-    // setShowDropdown(false);
+    toggleDropdown;
   }
 
   return (
