@@ -18,7 +18,7 @@ Running the program
 -------------------------------------------------------
 Clone this repo:
 ```
-git clone [https://github.com/WUNLIMZHE/react-cssocietyusm-events-clone.git]
+git clone https://github.com/WUNLIMZHE/react-cssocietyusm-events-clone.git
 cd react-cssocietyusm-events-clone
 ```
 **Running with Node** <br/>
